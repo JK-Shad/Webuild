@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    --orange: #FD5D14;
+    --darkblue: #040F28;
+    --lightgray: #F4F6F8;
+    --white: #FFFFFF;
+}
+.container {
+    max-width:  90%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    background-color: var(--lightgray);
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: var(--orange);
+}
+
+/* En tête */
+.head h1 {
+    font-size: 1.3rem;
+    color: var(--darkblue);
+}
+.head h2 {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.lg {
+    width: 30%;
+    color: var(--orange);
+    font-size: 2.5rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+.text {
+    width: 70%;
+}
+
+.bureau, .bureau-2, .bureau-3 {
+    width: 33.33%;
+    border-right: 1px dotted gray;
+    padding: 1rem 0;
+}
+
+
+/* Navbar*/
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    background: url("../img/bg.png");
+}
+
+.links {
+    padding-top: 2rem;
+}
+
+.navbar .links a {
+    color:var(--white);
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.3rem
+}
+
+.navbar a:hover {
+    color: var(--orange);
+}
+
+.navbar .links a:first-child {
+    color: var(--white);
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.3rem
+}
+
+.navbar .links a:last-child {
+    color: var(--white);
+    font-family: 'Anton', sans-serif;
+    background-color: var(--orange);
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.5rem
+}
+
+.navbar .links a:last-child:hover {
+    color: var(--darkblue);
+}
+
+/* Dropdown */
+.navbar .dropdown {
+    position: relative;
+    display: inline-flex;
+    text-transform: uppercase;
+}
+
+.navbar .dropdown a.liens {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.navbar .dropdown a.liens [title] {
+    color: var(--white);
+}
+
+.navbar .dropdown a.liens [title] :hover {
+    color: var(--orange);
+}
+
+.navbar .dropdown .sous-menu {
+    width:15rem;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    background: url("../img/bg.png");
+    display: none;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.navbar .dropdown .sous-menu a.links{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background: none;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+.navbar .dropdown .sous-menu a.links:hover{
+    color: var(--orange);
+}
+
+.navbar .dropdown:hover .sous-menu {
+    display: block;
+    animation: slideINDown 0.5s ease-in-out;
+}
+
+/* Milieu de page */
+
+.tete {
+    margin-bottom: 2rem;
+}
+
+.text-c {
+    width: 65%;
+}
+
+.photo {
+    width: 35%;
+}
+.l, .r {
+    width: 50%;   
+}
+.text-c p {
+   font-size: 1.5rem;
+   color: grey;  
+
+}
+
+.text-c h2 {
+    margin-top: 2rem;
+    color: gray;
+}
+.text-c p {
+    margin-top: 1rem;
+}
+.text-c h1 {
+    margin-top: 1rem;
+    color: var(--darkblue);
+    font-size: 2.8rem;
+}
+
+.fa-check {
+    font-size: 1rem;
+    color: var(--orange);
+}
+
+.ph {
+    position: absolute;
+    top: 20%;
+}
+
+.back {
+    background: url("../img/bg-2.png");
+    position: relative;
+}
+
+/* --Service de constructions */
+
+.container-fluid h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 3rem 0 2rem 0;
+    width: 40%;
+    margin: auto;
+}
+
+.constru {
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.constru img {
+    width: 100%;
+}
+
+.constru h2 {
+    color: var(--darkblue);
+    background-color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.constru i {
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    color: var(--orange);
+    background-color: var(--white);
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50px;
+}
+.cdb {
+    background-color: var(--white);
+}
+.constru a {
+    color: var(--orange);
+    background-color: var(--white);
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.constru p {
+    color: grey;
+    background-color: var(--white);
+    margin: 1rem;
+}
+
+.cdb, .tap, .cons {
+    width: 33.33%;
+}
+
+/* Rappels */
+
+.rappel h1 {
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 2.8rem;
+
+}
+
+.rappel p {
+    text-align: left;
+    color: gray;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    
+}
+
+.rappel a {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.rappel {
+    background-color: var(--white);
+    width: 100%;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.rappel-2 {
+    width: 30%;
+}
+
+.rappel-3 {
+    width: 70%;
+    background-color: var(--lightgray);
+    padding: 2rem;
+}
+
+.rappel-4 {
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.rappel-5, .rappel-6 {
+    width: 50%;
+}
+
+.rappel-5 input, .rappel-6 input {
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    border: none;
+}
+
+.area  textarea {
+    width: 100%;
+    padding: 1rem 0 0 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.button button {
+    width: 100%;
+    background-color: var(--orange);
+    padding: 1.5rem 0;
+    color: var(--white);
+    border: none;
+}
+
+/* Projets*/
+
+.ab {
+    width: 33%;
+    position: relative;
+    height: 140px;
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    padding: 0.7rem;
+
+}
+.projet {
+    width: 40%;
+    margin: auto;
+    padding: 1.5rem 2.5rem;
+    background: url("../img/bg-2.png");
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.projet img {
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+.projet h2 {
+    width: 90%;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 40%;
+}
+
+/* Projets 2 */
+
+.pico-2 {
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem
+}
+
+.pico-2 img {
+    width: 100%;
+    height: 100%;
+}
+.project {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.text-pro {
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    width: 80%;
+    left: 10%;
+    top: 90%;
+}
+
+.text-pro p {
+    color: gray;
+}
+
+.fa-location-dot { 
+    color: var(--orange);
+}
+
+/* Travailleurs */
+
+.work h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 3rem 0 2rem 0;
+    width: 40%;
+    margin: auto;
+}
+
+.equipe {
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.equipe h3 {
+    color: var(--darkblue);
+    font-size: 1.8rem;
+    padding: 1rem;
+
+}
+
+.team {
+    width: 25%;
+    background-color: var(--lightgray);
+    position: relative;
+}
+
+.team img {
+    width: 90%;
+}
+
+.c-1 {
+    width: 90%;
+}
+
+.c-2 {
+    width: 10%;
+    display: block;
+}
+
+.c-2 i {
+    color: gray;
+    font-size: 1.5rem;
+    padding: 1rem 0 2.2rem 0;
+}
+
+.c-2 i:hover {
+    color: var(--darkblue);
+}
+
+.name {
+    padding: 1rem;
+}
+
+.name h3 {
+    color: var(--darkblue);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.name p {
+    color: gray;
+    font-size: 1.3rem;
+}
